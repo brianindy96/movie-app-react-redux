@@ -1,5 +1,3 @@
-Here is an example of a good README.md file that explains how to install a project:
-
 <h1>Project Name</h1>
 This is a short description of the project.
 
