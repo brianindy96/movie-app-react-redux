@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&family=Gloock&family=Montserrat:ital,wght@0,100;0,200;0,300;1,400&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  min-height: 100vh;
+  max-width: 100vw;
+}
