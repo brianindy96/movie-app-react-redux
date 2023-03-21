@@ -28,8 +28,11 @@ touch .env
 VARIABLE_NAME=value
 for example: API_KEY="...", BASE_URL="..."
 
+**Input your own api key as API_KEY given from TMDB API
+https://www.themoviedb.org/
+
 <h3>Start the development server.</h3>
 
-npm start
+npm run dev
 
-<h3>Open your web browser and navigate to http://localhost:3000 to view the app.</h3>
+<h3>Navigate to your terminal and click on the Local server provided by VITE to view the app.</h3>
