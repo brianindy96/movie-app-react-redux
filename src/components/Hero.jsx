@@ -6,7 +6,6 @@ import { xs, sm, md } from '../responsiveness/responsive'
 
 const Container = styled.div`
     min-height: 35vh;
-    
 `
 
 const Wrapper = styled.div`
@@ -19,14 +18,11 @@ const Wrapper = styled.div`
     padding: 2rem 1rem;
 
     ${xs({ alignItems: "center" })};
-
-    
 `
-
+// TEXTS
 const Title = styled.h1`
     font-size: 4rem;
     font-family: 'Montserrat', sans-serif;
-
     color: white;
 
     ${xs({ fontSize: '3rem', textAlign: "center" })};
@@ -38,7 +34,6 @@ const Subtitle = styled.h2`
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
     font-weight: 100;
-
     color: #ffffff;
 
     ${xs({ fontSize: '1.5rem', marginBottom: "2rem", textAlign: "center" })};
@@ -46,7 +41,7 @@ const Subtitle = styled.h2`
     ${md({ fontSize: '2.5rem', marginBottom: "3rem" })};
 
 `
-
+// Search Input
 const SearchContainer = styled.div`
   width: 100%;
   display: flex;
@@ -73,8 +68,6 @@ const ClearButton = styled.button`
   cursor: pointer;
   outline: none;
   color: black;
-
-
 `
 
 const Hero = () => {

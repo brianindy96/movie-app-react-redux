@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import styled from 'styled-components'
 import { addFavoriteMovie, removeFavoriteMovie, selectOption } from '../store/Reducer'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import RemoveIcon from '@mui/icons-material/Remove';
 import Remove from '@mui/icons-material/Remove';
 
 const Container = styled.div`
@@ -23,6 +22,8 @@ const ContentCon = styled.div`
     padding: 1rem;
 `
 
+// Images
+
 const ImgContainer = styled.div`
     width: 100%;
     flex: 2;
@@ -35,7 +36,7 @@ const Image = styled.img`
     object-fit: cover;
     
 `
-
+// Buttons
 const Button = styled.button`
     padding: 0.2rem;
     border-radius: 50%;
@@ -46,11 +47,8 @@ const Button = styled.button`
     &:hover {
         transform: scale(1.01);
         color: ${props => props.heart ? "red" : "lightgrey"};
-
     }
-
 `
-
 const ButtonContainer = styled.div`
     display: flex;
     justify-content: flex-end;
@@ -67,9 +65,11 @@ const MovieCard = ({ movie: { id, title, release_date, favorites, poster_path}})
     const { favoriteMovies } = useSelector((state) => state.movies);
 
     const handleAddFavoriteMovie = () => {
+      // If movie is already favorited, then don't add it again
         const isMovieAlreadyInFavorites = favoriteMovies.some(
           (favoriteMovie) => favoriteMovie.id === id
         );
+        // if not yet, then add it
         if (!isMovieAlreadyInFavorites) {
           dispatch(
             addFavoriteMovie({
@@ -87,6 +87,7 @@ const MovieCard = ({ movie: { id, title, release_date, favorites, poster_path}})
         dispatch(removeFavoriteMovie({ id }));
       };
 
+    // Check if movie is already in favorites
     const isMovieInFavorites = favoriteMovies.some(
         (favoriteMovie) => favoriteMovie.id === id
     );

@@ -51,13 +51,14 @@ const MovieGrid = () => {
 
     const fetchMovies = () => {
       setLoading(true);
-      
+      // API endpoint for default movies
       let endpoint = `${BASE_URL}/movie/popular?api_key=${API_KEY}&query=g&language=en-US&page=${page}`;
-      
+      // API endpoint for search movies
       if (searchQuery) {
         endpoint = `${BASE_URL}/search/movie?api_key=${API_KEY}&query=${searchQuery}&page=${page}`;
       }
-
+  
+    // Fetch movies
     fetch(endpoint)
       .then(response => {
       if (!response.ok) {
@@ -89,7 +90,7 @@ const MovieGrid = () => {
         : null
       : movies.results;
 
-    console.log(movies.results);
+    // console.log(movies.results);
 
     const totalPages = movies.total_pages || 1;
 
@@ -129,9 +130,9 @@ const MovieGrid = () => {
         
       ) : (
         <div style={{alignItems: "center", display: "flex", flexDirection: "column", textAlign: "center", justifyContent: "center", paddingTop: "5rem"}}>
-                    <h1 style={{marginBottom: "1rem"}}>Loading..</h1>
-                    <p style={{fontSize: "1.2rem", marginBottom: "1rem"}}>Hang tight! We're fetching the movies for you</p>
-                    <Loader />
+            <h1 style={{marginBottom: "1rem"}}>Loading..</h1>
+            <p style={{fontSize: "1.2rem", marginBottom: "1rem"}}>Hang tight! We're fetching the movies for you</p>
+            <Loader />
         </div>
       )}
       
