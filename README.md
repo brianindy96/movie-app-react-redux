@@ -1,8 +1,11 @@
 <h1>Project Name</h1>
-This is a short description of the project.
+Movie App with React and Redux
 
 <h2>Project description:</h2>
 This movie listing app was built using React and Redux to help manage the state of the application. React is a JavaScript library for building user interfaces, while Redux is a predictable state container for JavaScript apps. Together, they allow us to manage application state in a predictable and consistent way, making it easier to develop and maintain the app over time.
+
+![image](https://user-images.githubusercontent.com/80921901/226683937-9efbb17a-74c3-49da-8c6d-16a9586f2ab2.png)
+
 
 <h2>Installation</h2>
 
