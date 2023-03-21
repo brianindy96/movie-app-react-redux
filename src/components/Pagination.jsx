@@ -21,7 +21,7 @@ const PaginationButton = styled.button`
   cursor: pointer;
 
   ${xs({ fontSize: '0.8rem' })};
-  ${md({ fontSize: '1.1rem' })};
+  ${md({ fontSize: '1.09rem' })};
 
 `;
 
