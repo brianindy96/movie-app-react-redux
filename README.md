@@ -1,6 +1,8 @@
 <h1>Project Name</h1>
 Movie App with React and Redux
 
+Live Version: https://tmdb-movie-api-react-redux.netlify.app/
+
 <h2>Project description:</h2>
 This movie listing app was built using React and Redux to help manage the state of the application. React is a JavaScript library for building user interfaces, while Redux is a predictable state container for JavaScript apps. Together, they allow us to manage application state in a predictable and consistent way, making it easier to develop and maintain the app over time.
 
