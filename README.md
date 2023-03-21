@@ -11,7 +11,7 @@ This movie listing app was built using React and Redux to help manage the state 
 
 <h3>Clone the repository to your local machine.</h3>
 
-git clone https://github.com/your-username/project-name.git
+git clone https://github.com/brianindy96/movie-app-react-redux.git
 
 <h3>Install the dependencies.</h3>
 
@@ -26,6 +26,7 @@ touch .env
 <h3>Add environment variables to the .env file.</h3>
 
 VARIABLE_NAME=value
+for example: API_KEY="...", BASE_URL="..."
 
 <h3>Start the development server.</h3>
 
